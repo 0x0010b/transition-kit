@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TransitionKit_Example' do
+  pod 'TransitionKit', :path => '../'
+
+  target 'TransitionKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
