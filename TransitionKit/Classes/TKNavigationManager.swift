@@ -2,7 +2,7 @@
 //  TKNavigationManager.swift
 //  TransitionKit
 //
-//  Created by Felix Chacaltana on 2/9/20.
+//  Created by 0x0010b on 2/9/20.
 //
 
 import UIKit
