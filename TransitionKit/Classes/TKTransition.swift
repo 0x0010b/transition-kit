@@ -13,12 +13,12 @@ final internal class TKTransition: NSObject, UIViewControllerAnimatedTransitioni
     
     private var origin      : UIViewController!
     private var destination : UIViewController!
-    private var operation   : UINavigationControllerOperation!
+    private var operation   : UINavigationController.Operation!
     private var animation   : TKTransitionAnimation!
     
     // MARK: - Initialization
     
-    init(from fromVC: UIViewController, to toVC: UIViewController, operation: UINavigationControllerOperation, animation: TKTransitionAnimation) {
+    init(from fromVC: UIViewController, to toVC: UIViewController, operation: UINavigationController.Operation, animation: TKTransitionAnimation) {
         
         self.origin       = fromVC
         self.destination  = toVC

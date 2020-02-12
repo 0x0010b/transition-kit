@@ -13,7 +13,7 @@ class SplashToMainTransition: TKTransitionAnimation {
     
     var origin      : UIViewController.Type = SplashViewController.self
     var destination : UIViewController.Type = MainViewController.self
-    var operations  : [UINavigationControllerOperation] = [.push, .pop]
+    var operations  : [UINavigationController.Operation] = [.push, .pop]
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5

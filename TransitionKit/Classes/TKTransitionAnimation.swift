@@ -13,7 +13,7 @@ public protocol TKTransitionAnimation {
     
     var origin      : UIViewController.Type {get set}
     var destination : UIViewController.Type {get set}
-    var operations  : [UINavigationControllerOperation] {get set}
+    var operations  : [UINavigationController.Operation] {get set}
     
     // MARK: - Methods
     

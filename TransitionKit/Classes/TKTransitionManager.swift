@@ -23,7 +23,7 @@ final public class TKTransitionManager {
     
     // MARK: - Methods
     
-    internal func instantiate(from fromVC: UIViewController, to toVC: UIViewController, operation: UINavigationControllerOperation)-> UIViewControllerAnimatedTransitioning? {
+    internal func instantiate(from fromVC: UIViewController, to toVC: UIViewController, operation: UINavigationController.Operation)-> UIViewControllerAnimatedTransitioning? {
         
         guard let animation = self.transitions.first(where: { (configurator) -> Bool in
             
