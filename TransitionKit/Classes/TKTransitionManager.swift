@@ -15,7 +15,7 @@ final public class TKTransitionManager {
     
     // MARK: - Properties
     
-    private var transitions = [TKTransitionDataSource]()
+    private var transitions = [TKTransitionAnimation]()
     
     // MARK: - Initialization
     
@@ -25,7 +25,7 @@ final public class TKTransitionManager {
     
     internal func instantiate(from fromVC: UIViewController, to toVC: UIViewController, operation: UINavigationControllerOperation)-> UIViewControllerAnimatedTransitioning? {
         
-        guard let dataSource = self.transitions.first(where: { (configurator) -> Bool in
+        guard let animation = self.transitions.first(where: { (configurator) -> Bool in
             
             let isPush          = fromVC.isKind(of: configurator.origin) && toVC.isKind(of: configurator.destination) && operation == .push
             let isPop           = fromVC.isKind(of: configurator.destination) && toVC.isKind(of: configurator.origin) && operation == .pop
@@ -37,10 +37,10 @@ final public class TKTransitionManager {
             return nil
         }
         
-        return TKTransition(from: fromVC, to: toVC, operation: operation, dataSource: dataSource)
+        return TKTransition(from: fromVC, to: toVC, operation: operation, animation: animation)
     }
     
-    public func add(_ transitions: TKTransitionDataSource...) {
+    public func add(_ transitions: TKTransitionAnimation...) {
         self.transitions.append(contentsOf: transitions)
     }
 }

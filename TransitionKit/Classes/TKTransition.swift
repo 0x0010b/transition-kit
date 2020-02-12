@@ -14,31 +14,31 @@ final internal class TKTransition: NSObject, UIViewControllerAnimatedTransitioni
     private var origin      : UIViewController!
     private var destination : UIViewController!
     private var operation   : UINavigationControllerOperation!
-    private var dataSource  : TKTransitionDataSource!
+    private var animation   : TKTransitionAnimation!
     
     // MARK: - Initialization
     
-    init(from fromVC: UIViewController, to toVC: UIViewController, operation: UINavigationControllerOperation, dataSource: TKTransitionDataSource) {
+    init(from fromVC: UIViewController, to toVC: UIViewController, operation: UINavigationControllerOperation, animation: TKTransitionAnimation) {
         
         self.origin       = fromVC
         self.destination  = toVC
         self.operation    = operation
-        self.dataSource   = dataSource
+        self.animation    = animation
     }
     
     // MARK: - UIViewControllerAnimatedTransitioning
     
     internal func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return self.dataSource.transitionDuration(using: transitionContext)
+        return self.animation.transitionDuration(using: transitionContext)
     }
 
     internal func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
 
         switch self.operation {
         case .push:
-            self.dataSource.transitionPush(using: transitionContext)
+            self.animation.transitionPush(using: transitionContext)
         case .pop:
-            self.dataSource.transitionPop(using: transitionContext)
+            self.animation.transitionPop(using: transitionContext)
 
         default:
             break

@@ -9,7 +9,7 @@
 import UIKit
 import TransitionKit
 
-class SplashToMainTransition: TKTransitionDataSource {
+class SplashToMainTransition: TKTransitionAnimation {
     
     var origin      : UIViewController.Type = SplashViewController.self
     var destination : UIViewController.Type = MainViewController.self

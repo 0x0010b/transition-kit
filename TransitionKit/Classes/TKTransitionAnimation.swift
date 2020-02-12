@@ -1,5 +1,5 @@
 //
-//  TKTransitionDataSource.swift
+//  TKTransitionAnimation.swift
 //  TransitionKit
 //
 //  Created by 0x0010b on 2/9/20.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol TKTransitionDataSource {
+public protocol TKTransitionAnimation {
     
     // MARK: - Properties
     
