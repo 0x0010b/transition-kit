@@ -1,9 +1,9 @@
 # TransitionKit
 
-[![CI Status](https://img.shields.io/travis/0x0010b/TransitionKit.svg?style=flat)](https://travis-ci.org/0x0010b/TransitionKit)
-[![Version](https://img.shields.io/cocoapods/v/TransitionKit.svg?style=flat)](https://cocoapods.org/pods/TransitionKit)
-[![License](https://img.shields.io/cocoapods/l/TransitionKit.svg?style=flat)](https://cocoapods.org/pods/TransitionKit)
-[![Platform](https://img.shields.io/cocoapods/p/TransitionKit.svg?style=flat)](https://cocoapods.org/pods/TransitionKit)
+[![CI Status](https://img.shields.io/badge/build-passing-success)](https://github.com/0x0010b/transition-kit)
+[![Version](https://img.shields.io/badge/pod-v1.0.2-blue)](https://github.com/0x0010b/transition-kit)
+[![License](https://img.shields.io/badge/license-MIT-black)](https://github.com/0x0010b/transition-kit)
+[![Platform](https://img.shields.io/badge/platform-ios-lightgrey)](https://github.com/0x0010b/transition-kit)
 
 ## Example
 
